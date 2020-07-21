@@ -1,0 +1,21 @@
+{
+  "name": "investment",
+  "version": "1.0.0",
+  "description": "Investment api sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Danilo Rangel",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25",
+    "validator": "^13.1.1",
+    "request": "^2.79.0"
+  }
+}
