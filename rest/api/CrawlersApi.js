@@ -10,7 +10,7 @@ server.get(apiName, function (req, res) {
     res.end('CrawlerApi');
 });
 
-server.get(apiName + "/" + version.V1+"/getValueById/:id", function (req, res) {
+server.get(apiName + "/" + version.V1 + "/getValueById/:id", function (req, res) {
     res.contentType('application/json');
     let id = validator.trim(validator.escape(req.params.id));
     controller.requestValueByCode(id).then(r => res.json(r)).catch(function (error) {
@@ -19,7 +19,7 @@ server.get(apiName + "/" + version.V1+"/getValueById/:id", function (req, res) {
 
 })
 
-server.get(apiName + "/" + version.V1+"/search/:param", function (req, res) {
+server.get(apiName + "/" + version.V1 + "/search/:param", function (req, res) {
     res.contentType('application/json');
     let param = validator.trim(validator.escape(req.params.param));
     controller.searchBy(param).then(r => res.json(r)).catch(function (error) {
